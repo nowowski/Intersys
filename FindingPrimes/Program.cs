@@ -10,7 +10,7 @@ namespace FindingPrimes
     {
         static void Main(string[] args)
         {
-            int m = 1, n = 1;
+            int m = 100, n = 200;
             int ans = Primes.findPrimes(m, n);
             Console.WriteLine(ans);
             Console.ReadKey();
