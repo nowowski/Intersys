@@ -8,7 +8,7 @@ namespace Permutation
 {
     class Permutation
     {
-        public static bool arePermutations(int[] arr1, int[] arr2)
+        public static string arePermutations(int[] arr1, int[] arr2)
         {
             Dictionary<int, int> hashMap = new Dictionary<int, int>();
 
@@ -30,7 +30,7 @@ namespace Permutation
                 int x = arr2[i];
 
                 if (!hashMap.ContainsKey(x))
-                    return false;
+                    return "NO";
 
                 int k = hashMap[x];
                 if (!hashMap.ContainsKey(x))
@@ -42,7 +42,7 @@ namespace Permutation
                     hashMap.Add(x, a + 1);
                 }
             }
-            return true;
+            return "YES";
         }
     }
 }

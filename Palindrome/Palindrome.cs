@@ -8,11 +8,12 @@ namespace Palindrome
 {
     class Palindrome
     {
-        public static bool isPalindrome(string sentence)
+        public static string isPalindrome(string sentence)
         {
-            for (int l = 0, r = sentence.Length - 1; l < r; l++, r--)
-                if (sentence[l] != sentence[r]) return false;
-            return true;
+            var checkOnlyLetters = new String(sentence.ToLower().Where(Char.IsLetter).ToArray());
+            for (int leftIndex = 0, rightIndex = checkOnlyLetters.Length - 1; leftIndex < rightIndex; leftIndex++, rightIndex--)
+                if (checkOnlyLetters[leftIndex] != checkOnlyLetters[rightIndex]) return "NO";
+            return "YES";
         }
     }
 }

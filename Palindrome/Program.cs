@@ -10,9 +10,9 @@ namespace Palindrome
     {
         static void Main(string[] args)
         {
-            string checkString = "@allula 7689679";
-            var checkOnlyLetters = new String(checkString.ToLower().Where(Char.IsLetter).ToArray());
-            Console.WriteLine(Palindrome.isPalindrome(checkOnlyLetters) ? "YES" : "NO");
+            string checkString = "@alula 7689679";
+            string ans = Palindrome.isPalindrome(checkString);
+            Console.WriteLine(ans);
             Console.ReadKey();
         }
     }
