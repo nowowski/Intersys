@@ -8,10 +8,11 @@ namespace ExistingPowers
 {
     class Powers
     {
-        public static void powerOfTwo(List<uint> listNumbers)
+        public static string powerOfTwo(List<uint> listNumbers)
         {
             List<uint> powerOfTwo = new List<uint>();
             uint x;
+            string result;
 
             foreach (uint number in listNumbers)
             {
@@ -32,21 +33,15 @@ namespace ExistingPowers
 
             if (powerOfTwo.Count > 0)
             {
-                for (int i = 0; i < powerOfTwo.Count; i++)
-                {
-
-                    Console.Write(powerOfTwo[i]);
-
-                    if (i != powerOfTwo.Count - 1)
-                        Console.Write(", ");
-
-                }
+                result = String.Join("," , powerOfTwo);
             }
             else
             {
-                Console.Write("NA");
+                result = "NA";
             
             }
+
+            return result;
         }
     }
 }

@@ -10,10 +10,10 @@ namespace ExistingPowers
     {
         static void Main(string[] args)
         {
-            List<uint> uintList = new List<uint>() { 3, 5, 6, 7,  9 };
-            Powers.powerOfTwo(uintList);
+            List<uint> uintList = new List<uint>() { 1, 3, 4 };
+            string ans = Powers.powerOfTwo(uintList);
+            Console.WriteLine(ans);
             Console.ReadKey();
-         
         }
     }
 }
