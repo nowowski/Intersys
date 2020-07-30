@@ -11,7 +11,8 @@ namespace FindingPrimes
         static void Main(string[] args)
         {
             int m = 1, n = 1;
-            Primes.findPrimes(m, n);
+            int ans = Primes.findPrimes(m, n);
+            Console.WriteLine(ans);
             Console.ReadKey();
         }
     }

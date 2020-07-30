@@ -8,7 +8,7 @@ namespace FindingPrimes
 {
     class Primes
     {
-        public static void findPrimes(int m, int n)
+        public static int findPrimes(int m, int n)
         {
             int counter;
             int numberOfPrimes = 0;
@@ -28,7 +28,7 @@ namespace FindingPrimes
                 if (counter == 0 && num != 1)
                     numberOfPrimes++;
             }
-            Console.WriteLine(numberOfPrimes);
+           return numberOfPrimes;
         }
     }
 }
