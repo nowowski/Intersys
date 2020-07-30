@@ -24,7 +24,6 @@ namespace ExistingPowers
                     {
                         if (!powerOfTwo.Contains(x)) powerOfTwo.Add(x);
                         x = x / 2;
-
                     }
                 };
             };
@@ -38,7 +37,6 @@ namespace ExistingPowers
             else
             {
                 result = "NA";
-            
             }
 
             return result;
