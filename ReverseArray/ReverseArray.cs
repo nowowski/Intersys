@@ -8,7 +8,7 @@ namespace ReverseArray
 {
     class ReverseArray
     {
-        public static void reverseArray(int[] arr)
+        public static int[] reverseArray(int[] arr)
         {
             int temp;
             int startIndex = 0;
@@ -22,6 +22,8 @@ namespace ReverseArray
                 startIndex++;
                 endIndex--;
             }
+            return arr;
+
         }
     }
 }

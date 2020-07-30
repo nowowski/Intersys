@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{8FCE020C-D6F6-473A-912D-407F66AB1BBE}</ProjectGuid>
+    <ProjectGuid>{1984B6BE-029D-44CA-B949-89E11EE7614C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Intersys</RootNamespace>
-    <AssemblyName>Intersys</AssemblyName>
+    <RootNamespace>ReverseArray</RootNamespace>
+    <AssemblyName>ReverseArray</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
